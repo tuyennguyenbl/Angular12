@@ -4,7 +4,7 @@
     <h4>Hello : {{name}} </h4>
    <input value="{{name}}"/>
    <br />
-   <input [value]="name" title="This is name "/>
+    <h2 *ngIf ="age >18 ">You're too Old ! </h2>
    <br />
-   <input [value]="name" [title]="'This is' + name "/>
+   <h2 *ngIf ="age <= 18" >You're too young ! </h2>
 </div>
