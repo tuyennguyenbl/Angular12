@@ -1,10 +1,17 @@
 <div class="test">
     <h2>This is component HOME </h2>
     <h3> this is second line of HOME compoment</h3>
-    <h4>Hello : {{name}} </h4>
-   <input value="{{name}}"/>
+ 
+   <!-- <input value="{{name}}"/>
    <br />
     <h2 *ngIf ="age >18 ">You're too Old ! </h2>
    <br />
-   <h2 *ngIf ="age <= 18" >You're too young ! </h2>
+   <h2 *ngIf ="age <= 18" >You're too young ! </h2> -->
+
+   <input type="text" [(ngModel)]="name"/>
+
+   <h4>Hello : {{name}} </h4>
+
+   <button (click)="resetName()" >Reset Name</button>
+
 </div>
