@@ -1,24 +1,42 @@
 <div class="test">
-    <h2>This is component HOME </h2>
-    <h3> this is second line of HOME compoment</h3>
+    <h1>This is component HOME </h1>
+
+    <h2> Natural Food</h2>
+ <!-- <div *ngFor="let item of naturalfood ; let i = index" >
+    <li>{{i+1}}.{{item}}</li>
+ </div> -->
  
-   <!-- <input value="{{name}}"/>
-   <br />
-    <h2 *ngIf ="age >18 ">You're too Old ! </h2>
-   <br />
-   <h2 *ngIf ="age <= 18" >You're too young ! </h2> -->
+ <br/>
+<table class="table"  >
+    <tr>
+        <th>
+            No.
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Discount
+        </th>
+    </tr>
+    <tr *ngFor="let item of naturalfood1 ; let i = index"> 
+        <th>
+            {{i+1}}
+        </th>
+        <th>
+           {{ item.name}}
+        </th>
+        <th class="canhphai">
+            <span [ngClass]="{'so-am': item.price <0 }">  {{item.price}} </span>      
+        </th>
+        <th >
+            <span *ngIf="item.discount">Discount!!!!!</span>    
+        </th>
+    </tr>
+</table>
 
-   <input type="text" [(ngModel)]="age"/>
-
- <h4>Tuoi cua ban la : {{age}} </h4>
-
-   <!-- <button (click)="resetName()" >Reset Name</button> -->
-<!-- 
-<h2 *ngIf="age <=18">Ban con tre qua</h2>
-<h2 *ngIf="age >18">Ban da qua gia roi</h2> -->
-
-<div *ngIf="age <=18; then tre; else gia" ></div>
-    <ng-template #tre><h2>Ban con qua tre</h2></ng-template> 
-    <ng-template #gia><h2>Ban da qua gia !</h2></ng-template> 
 
 </div>

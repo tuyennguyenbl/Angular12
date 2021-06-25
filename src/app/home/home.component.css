@@ -1,6 +1,20 @@
 .test{
     border: 1px solid;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 5px 10px red;
-    width: 400px;
+    width: 600px;
+}
+.table,
+td,
+th{
+    border-collapse: collapse;
+    border: 1px solid;color: black;
+    min-width: 100px;
+}
+
+.so-am{
+    color: brown;
+}
+.canhphai{
+    text-align: right;
 }
