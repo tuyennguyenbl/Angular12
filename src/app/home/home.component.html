@@ -27,13 +27,13 @@
             {{i+1}}
         </th>
         <th>
-           {{ item.name}}
+           {{ item.name | uppercase}}
         </th>
         <th class="canhphai">
-            <span [ngClass]="{'so-am': item.price <0 }">  {{item.price}} </span>      
+            <span [ngClass]="{'so-am': item.price <0 }">  {{item.price | currency:"EUR":"symbol":"1.2"}} </span>      
         </th>
         <th >
-            <span *ngIf="item.discount">Discount!!!!!</span>    
+            <span> {{item.discount | onSale |uppercase }} </span>
         </th>
     </tr>
 </table>
