@@ -1,13 +1,13 @@
 <div class="test">
     <h1>This is component HOME </h1>
 
-    <h2> Natural Food</h2>
+    <h2> Vietnam Data</h2>
  <!-- <div *ngFor="let item of naturalfood ; let i = index" >
     <li>{{i+1}}.{{item}}</li>
  </div> -->
  
  <br/>
-<table class="table"  >
+<!-- <table class="table"  >
     <tr>
         <th>
             No.
@@ -36,7 +36,19 @@
             <span> {{item.discount | onSale |uppercase }} </span>
         </th>
     </tr>
-</table>
-
+</table> -->
+Tỉnh / Thành Phố:
+  <select id="city" (change)="changeCity($event)">
+    <option *ngFor="let data of vietnamData" value="{{ data.city }}">
+      {{ data.city }}
+    </option>
+  </select>
+  <br />
+  Quận / Huyện:
+  <select id="district">
+    <option *ngFor="let district of districts" value="{{ district }}">
+      {{ district }}
+    </option>
+  </select>
 
 </div>
