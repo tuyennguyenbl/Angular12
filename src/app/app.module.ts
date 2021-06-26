@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HighLightDirective } from './Directives/high-light.directive';
 import { OnSalePipe } from './on-sale.pipe';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { OnSalePipe } from './on-sale.pipe';
     HomeComponent,
     AboutComponent,
     HighLightDirective,
-    OnSalePipe
+    OnSalePipe,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
